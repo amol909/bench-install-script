@@ -86,7 +86,7 @@ sudo apt-get install npm &&
 
 sudo npm install -g yarn
 
-pip3 install frappe-bench &&
+sudo python3 -m pip install frappe-bench &&
 
 read -p "Bench init name [frappe-bench] : " bench_name &&
 bench_name=${bench_name:-frappe-bench} &&
