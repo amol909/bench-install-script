@@ -16,61 +16,61 @@ sudo apt-get update -y && sudo apt-get upgrade -y &&
 
 echo $'\=====================> All packages updated! <=======================\ ' &&
 
-echo $ ' \ Installing git \ ' &&
+echo  $' \n Installing git \n' &&
 
 sudo apt-get install git &&
 
-echo $' \ git Installed \ ' &&
+echo $' \n git Installed \n ' &&
 
-echo $' \ Installing python dependencies \ ' &&
+echo $' \n Installing python dependencies \n ' &&
 
-sudo apt-get install python3-dev python3.10-dev python3-setuptools python3-pip python3-distutils &&
+sudo apt-get install python3-dev python3.10-dev python3-setuptools python3-pip python3-distutils 
 
-echo $' \ Python dependencies installed \ ' &&
+echo $' \n Python dependencies installed \n ' &&
 
-echo $' \ Installing python virtual env \ ' &&
+echo $' \n Installing python virtual env \n ' &&
 
 sudo apt-get install python3.10-venv &&
 
-echo $' \ Python virtual env installed \ ' &&
+echo $' \n Python virtual env installed \n ' &&
 
 sudo apt-get install software-properties-common &&
 
-echo $' \ Installing mariadb \ ' &&
+echo $' \n Installing mariadb \n ' &&
 
 sudo apt install mariadb-server mariadb-client &&
 
-echo $' \ MariaDB installed \ ' &&
+echo $' \n MariaDB installed \n ' &&
 
-echo $' \ Installing redis \ ' &&
+echo $' \n Installing redis \n ' &&
 
 sudo apt-get install redis-server &&
 
-echo $' \ Redis installed \ ' &&
+echo $' \n Redis installed \n ' &&
 
-echo $' \ Installing other dependencies required by ERPNext \ ' &&
+echo $' \n Installing other dependencies required by ERPNext \n ' &&
 
 sudo apt-get install xvfb libfontconfig wkhtmltopdf &&
 
 sudo apt-get install libmysqlclient-dev &&
 
-echo $' \ Other dependencies installed \ ' &&
+echo $' \n Other dependencies installed \n ' &&
 
-echo $' \ Setup mysql server \ ' &&
+echo $' \n Setup mysql server \n ' &&
 
 sudo mysql_secure_installation &&
 
-echo $' \ Updating mysql conf \ ' &&
+echo $' \n Updating mysql conf \n ' &&
 
 cat ./sql_conf.txt >> /etc/mysql/my.cnf &&
 
-echo $' \ Restarting mysql server \ ' &&
+echo $' \n Restarting mysql server \n ' &&
 
 sudo service mysql restart &&
 
-echo $' \ Mysql server setup completed \ ' &&
+echo $' \n Mysql server setup completed \n ' &&
 
-echo $' \ Installing other dependencies \ ' &&
+echo $' \n Installing other dependencies \n ' &&
 
 sudo apt install curl &&
 
@@ -89,7 +89,7 @@ sudo pip3 install frappe-bench &&
 read -p "Bench init name [frappe-bench] : " bench_name &&
 bench_name=${bench_name:-frappe-bench} &&
 
-echo $' \ Initializing bench \ ' &&
+echo $' \n Initializing bench \n ' &&
 
 bench init --frappe-branch version-15 $bench_name &&
 
@@ -97,7 +97,7 @@ cd $bench_name &&
 
 chmod -R o+rx /home/$USER &&
 
-echo $' \ Bench initialized \ '
+echo $' \n Bench initialized \n '
 
 
 
