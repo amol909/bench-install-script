@@ -30,29 +30,27 @@ echo $' \n Python dependencies installed \n '
 
 echo $' \n Installing python virtual env \n ' 
 
-sudo apt-get install python3.10-venv &&
+sudo apt-get install python3.10-venv 
 
-echo $' \n Python virtual env installed \n ' &&
+echo $' \n Python virtual env installed \n ' 
 
-sudo apt-get install software-properties-common &&
+sudo apt-get install software-properties-common
 
-echo $' \n Installing mariadb \n ' &&
+echo $' \n Installing mariadb \n '
 
-sudo apt install mariadb-server mariadb-client &&
+sudo apt install mariadb-server mariadb-client
 
-echo $' \n MariaDB installed \n ' &&
+echo $' \n MariaDB installed \n '
 
-echo $' \n Installing redis \n ' &&
+echo $' \n Installing redis \n '
 
-sudo apt-get install redis-server &&
+sudo apt-get install redis-server
 
 echo $' \n Redis installed \n ' &&
 
 echo $' \n Installing other dependencies required by ERPNext \n ' &&
 
-sudo apt-get install xvfb libfontconfig wkhtmltopdf &&
-
-sudo apt-get install libmysqlclient-dev &&
+sudo apt-get install xvfb libfontconfig wkhtmltopdf libmysqlclient-dev
 
 echo $' \n Other dependencies installed \n ' &&
 
