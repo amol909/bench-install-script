@@ -85,7 +85,7 @@ nvm install 18 &&
 sudo apt-get install npm &&
 
 sudo npm install -g yarn
-
+sudp apt-get install python3-pip &&
 sudo pip3 install frappe-bench &&
 
 read -p "Bench init name [frappe-bench] : " bench_name &&
