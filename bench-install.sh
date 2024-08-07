@@ -84,7 +84,7 @@ nvm install 18 &&
 
 sudo apt-get install npm &&
 
-sudo npm install -g yarn &&
+sudo npm install -g yarn
 
 sudo pip3 install frappe-bench &&
 
