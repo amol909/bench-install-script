@@ -24,13 +24,13 @@ echo $' \n git Installed \n ' &&
 
 echo $' \n Installing python dependencies \n '
 
-sudo apt-get install python3-dev python3.12-dev python3-setuptools python3-pip python3-distutils 
+sudo apt-get install python3-dev python3.10-dev python3-setuptools python3-pip python3-distutils 
 
 echo $' \n Python dependencies installed \n ' 
 
 echo $' \n Installing python virtual env \n ' 
 
-sudo apt-get install python3.12-venv 
+sudo apt-get install python3.10-venv
 
 echo $' \n Python virtual env installed \n ' 
 
