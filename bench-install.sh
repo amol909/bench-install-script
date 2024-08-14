@@ -24,6 +24,10 @@ echo $' \n git Installed \n ' &&
 
 echo $' \n Installing python dependencies \n '
 
+echo $' \n Installing nginx  \n ' &&
+
+sudo apt-get install nginx
+
 sudo apt-get install python3-dev python3.10-dev python3-setuptools python3-pip python3-distutils 
 
 echo $' \n Python dependencies installed \n ' 
